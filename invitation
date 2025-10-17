@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/static/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <title>Дресс-код и приглашение</title>
+    <style>
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 8px 16px;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: #007BFF;
+      }
+  
+      .sidebar {
+        width: 200px;
+        background-color: #eee;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+      .sidebar a {
+        display: block;
+      }
+      .content-margin {
+        margin-left: 220px;
+        padding: 15px;
+      }
+  
+      .topnav {
+        display: none;
+        background-color: #eee;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 28px;
+        padding: 10px 16px;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .content-margin {
+          margin-left: 0;
+          padding: 10px;
+        }
+        .topnav {
+          display: block;
+          position: relative;
+        }
+        .topnav a {
+          display: none;
+          border-top: 1px solid #ccc;
+        }
+        .topnav a.show {
+          display: block;
+        }
+        .menu-icon {
+          display: block;
+          background-color: #eee;
+          color: #333;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="sidebar">
+        <a href="/">Главная</a>
+        <a href="/where-when">Где и когда?</a>
+        <a href="/our-story">Наша история</a>
+        <a href="/invitation">Приглашение</a>
+        <a href="/dress-code">Дресс-код</a>
+        <a href="/our-gallery">Наши фото</a>
+        <a href="/anketa-link">Анкета гостя</a>
+        <a href="/get-to-the-event">Как добраться</a>
+    </nav>
+  
+    <div class="topnav">
+        <div class="menu-icon" onclick="toggleMenu()">☰ Меню</div>
+        <a href="/" aria-label="Главная">
+          <span class="icon">🏠</span><span class="text">Главная</span>
+        </a>
+        <a href="/where-when" aria-label="Где и когда?">
+          <span class="icon">📍</span><span class="text">Где и когда?</span>
+        </a>
+        <a href="/our-story" aria-label="Наша история">
+          <span class="icon">📖</span><span class="text">Наша история</span>
+        </a>
+        <a href="/invitation" aria-label="Приглашение">
+          <span class="icon">✉️</span><span class="text">Приглашение</span>
+        </a>
+        <a href="/dress-code" aria-label="Дресс-код">
+          <span class="icon">👗</span><span class="text">Дресс-код</span>
+        </a>
+        <a href="/our-gallery" aria-label="Наши фото">
+          <span class="icon">📸</span><span class="text">Наши фото</span>
+        </a>
+        <a href="/anketa-link" aria-label="Анкета гостя">
+          <span class="icon">📱</span><span class="text">Анкета гостя</span>
+        </a>
+        <a href="/get-to-the-event" aria-label="Как добраться">
+          <span class="icon">🗺️</span><span class="text">Как добраться</span>
+        </a>
+      </div>      
+      
+  
+    <div class="content content-margin">
+      
+    </div>
+  
+    <script>
+        function toggleMenu() {
+            const links = document.querySelectorAll('.topnav a');
+            links.forEach(link => {
+            link.classList.toggle('show');
+            });
+        }
+    </script>
+  </body>
+  
+    <div class="content content-margin">
+      
+  <section class="invitation-section">
+    <div class="container">
+      <h2 class="section-heading text-center">Приглашение</h2>
+      <hr class="divider">
+      <p class="lead-text invitation-text">
+        Дорогие наши друзья и близкие,<br><br>
+        С огромной радостью и трепетом в сердце мы приглашаем вас разделить с нами один из самых важных и незабываемых дней в нашей жизни — день, когда мы создадим нашу семью.<br><br>
+        Этот день наполнен любовью, светом и мечтами, и мы хотим, чтобы вы были рядом, чтобы вместе с нами почувствовать волшебство момента.<br><br>
+        Приходите, чтобы отпраздновать нашу любовь, обменяться улыбками и поздравлениями, и создать воспоминания, которые будут согревать наши сердца всю жизнь.<br><br>
+        Мы с нетерпением ждём встречи с каждым из вас 14 ноября 2025 года, чтобы провести этот день в теплом кругу друзей и семьи.<br><br>
+        С любовью,<br>
+        Андрей и Елена
+      </p>
+    </div>
+  </section>
+  
+
+<style>
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px 50px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #5A3E2B;
+  }
+
+  .section-heading {
+    font-size: 38px;
+    text-align: center;
+    margin: 60px 0 15px;
+    color: #B3673C;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .divider {
+    border: none;
+    border-top: 3px solid #DEB887;
+    width: 60px;
+    margin: 0 auto 40px;
+    border-radius: 2px;
+  }
+
+  .lead-text {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #6D4B3E;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .note-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #8B6F5E;
+    text-align: center;
+  }
+
+  .invitation-text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .dresscode-section {
+    background: #fff7f0;
+    padding: 60px 0;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 4px 20px rgba(180, 140, 95, 0.15);
+  }
+
+  .invitation-section {
+    background: #f5efe6;
+    padding: 60px 0;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 4px 20px rgba(180, 140, 95, 0.25);
+    margin-top: 40px;
+  }
+
+  .color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .palette-label {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #8B6F5E;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .color-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #bfa68a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: default;
+  }
+</style>
+
+    </div>
+  </body>
+</html>

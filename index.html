@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/static/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <title>Главная</title>
+    <style>
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 8px 16px;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: #007BFF;
+      }
+  
+      .sidebar {
+        width: 200px;
+        background-color: #eee;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+      .sidebar a {
+        display: block;
+      }
+      .content-margin {
+        margin-left: 220px;
+        padding: 15px;
+      }
+  
+      .topnav {
+        display: none;
+        background-color: #eee;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 28px;
+        padding: 10px 16px;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .content-margin {
+          margin-left: 0;
+          padding: 10px;
+        }
+        .topnav {
+          display: block;
+          position: relative;
+        }
+        .topnav a {
+          display: none;
+          border-top: 1px solid #ccc;
+        }
+        .topnav a.show {
+          display: block;
+        }
+        .menu-icon {
+          display: block;
+          background-color: #eee;
+          color: #333;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="sidebar">
+        <a href="/">Главная</a>
+        <a href="/where-when">Где и когда?</a>
+        <a href="/our-story">Наша история</a>
+        <a href="/invitation">Приглашение</a>
+        <a href="/dress-code">Дресс-код</a>
+        <a href="/our-gallery">Наши фото</a>
+        <a href="/anketa-link">Анкета гостя</a>
+        <a href="/get-to-the-event">Как добраться</a>
+    </nav>
+  
+    <div class="topnav">
+        <div class="menu-icon" onclick="toggleMenu()">☰ Меню</div>
+        <a href="/" aria-label="Главная">
+          <span class="icon">🏠</span><span class="text">Главная</span>
+        </a>
+        <a href="/where-when" aria-label="Где и когда?">
+          <span class="icon">📍</span><span class="text">Где и когда?</span>
+        </a>
+        <a href="/our-story" aria-label="Наша история">
+          <span class="icon">📖</span><span class="text">Наша история</span>
+        </a>
+        <a href="/invitation" aria-label="Приглашение">
+          <span class="icon">✉️</span><span class="text">Приглашение</span>
+        </a>
+        <a href="/dress-code" aria-label="Дресс-код">
+          <span class="icon">👗</span><span class="text">Дресс-код</span>
+        </a>
+        <a href="/our-gallery" aria-label="Наши фото">
+          <span class="icon">📸</span><span class="text">Наши фото</span>
+        </a>
+        <a href="/anketa-link" aria-label="Анкета гостя">
+          <span class="icon">📱</span><span class="text">Анкета гостя</span>
+        </a>
+        <a href="/get-to-the-event" aria-label="Как добраться">
+          <span class="icon">🗺️</span><span class="text">Как добраться</span>
+        </a>
+      </div>      
+      
+  
+    <div class="content content-margin">
+      
+    </div>
+  
+    <script>
+        function toggleMenu() {
+            const links = document.querySelectorAll('.topnav a');
+            links.forEach(link => {
+            link.classList.toggle('show');
+            });
+        }
+    </script>
+  </body>
+  
+    <div class="content content-margin">
+      
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arctica+Script&display=swap');
+
+  .container-custom {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    font-family: 'Arctica Script', cursive;
+    color: #3d3d3bff; /* серый текст */
+    text-align: center;
+  }
+
+  .welcome-text {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #3d3d3bff; /* серый */
+  }
+
+  .names {
+    font-size: 36px;
+    font-weight: 700;
+    color: #c7bc72ff; /* золотой */
+    margin-bottom: 50px;
+    font-family: 'Arctica Script', cursive;
+    font-style: normal !important;
+    letter-spacing: normal;
+  }
+
+  .names-extra {
+    font-style: italic !important;
+  }
+
+  .date-wedd {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  #countdown {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3d3d3bff; /* серый */
+    line-height: 1.4;
+  }
+
+  .photos-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increased spacing */
+    margin-top: 80px; /* increased top margin */
+  }
+
+  .photo-container {
+    position: relative; !important/* Needed for overlay */
+    text-align: center;
+    max-width: 320px; /* Wider container */
+  }
+
+  .photo-container img {
+    width: 300px; /* Bigger image */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(199, 188, 114, 0.5);
+    border: 3px solid #c7bc72ff;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  .photo-container::after {
+    content: attr(data-alt);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Arctica Script', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .photo-container:hover::after {
+    opacity: 1;
+  }
+
+  .photo-caption {
+    margin-top: 12px;
+    font-family: 'Arctica Script', cursive;
+    font-size: 20px;
+    color: #3d3d3bff; /* серый */
+    font-weight: 600;
+  }
+
+  .quote {
+    font-family: 'Arctica Script', cursive;
+    font-size: 16px;
+    font-style: italic;
+    color: #6d6d6cff;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.3;
+  }
+
+  /* Медиа-запрос для устройств с шириной экрана до 768px (планшеты, телефоны) */
+  @media (max-width: 900px) {
+    .container-custom {
+      max-width: 100%;
+      padding: 30px 10px;
+    }
+
+    .welcome-text {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .names-extra {
+      font-style: italic !important;
+    }
+
+    .names {
+      font-size: 28px;
+      margin-bottom: 40px;
+      font-family: 'Arctica Script', cursive;
+      font-style: normal !important;
+      letter-spacing: normal;
+    }
+
+    .date-wedd {
+      font-size: 22px;
+      white-space: normal; /* разрешает перенос */
+      word-break: break-word; /* переносит длинные слова */
+    }
+
+    #countdown {
+      font-size: 18px;
+    }
+
+    .photos-row {
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .photo-container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .photo-container img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+
+    .photo-container::after {
+      opacity: 1 !important;
+      position: static !important;
+      background-color: transparent !important;
+      color: #3d3d3bff !important; /* цвет текста в мобильной версии */
+      padding: 0 !important;
+      max-width: 100% !important;
+      box-shadow: none !important;
+      margin: 10px auto 0 auto !important;
+      display: block;
+    }
+  
+    .photo-container:hover::after {
+      opacity: 1 !important;
+    }
+
+    .quote {
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+</style>
+
+<div class="container-custom">
+  <div class="welcome-text">
+    Дорогие гости!<br>
+    Вы очень важные для нас люди!<br>
+    Приглашаем Вас разделить этот особенный день вместе с нами!
+  </div>
+
+  <div class=".names-extra names">
+    Андрей и Елена
+  </div>
+  <div class="names">
+    Крутских
+  </div>
+
+  <div class="welcome-text">
+    День создания нашей семьи: <span class="date-wedd">14 ноября 2025 года</span>
+  </div>
+
+  <div id="countdown"></div>
+
+  <div class="photos-row">
+    <div class="photo-container" data-alt="Андрей Викторович в детстве">
+      <img src="https://i.pinimg.com/originals/dd/e0/a4/dde0a4e19e55050fa26e2b24619b542a.jpg" alt="Детское фото Андрея">
+    </div>
+    <div class="photo-container" data-alt="Елена Игоревна в детстве">
+      <img src="https://masterpiecer-images.s3.yandex.net/e2caefb1719911eeb9b5429f31467427:upscaled" alt="Детское фото Елены">
+    </div>
+  </div>
+  <div class="photos-row">
+    <div class="quote">«Строительство — это искусство создания прочности на долгие годы»</div>
+    <div class="quote">«Код — это поэзия для тех, кто говорит на языке компьютеров»</div>
+  </div>
+</div>
+
+<script>
+  function updateCountdown() {
+    const targetDate = new Date('November 14, 2025 00:00:00').getTime();
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+      document.getElementById('countdown').innerHTML = 'Свадьба уже состоялась!';
+      clearInterval(timer);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('countdown').innerHTML =
+      `До свадьбы осталось: <br><strong>${days} дн ${hours} час ${minutes} мин ${seconds} сек</strong>`;
+  }
+
+  updateCountdown(); // initial call
+  const timer = setInterval(updateCountdown, 1000);
+</script>
+
+    </div>
+  </body>
+</html>

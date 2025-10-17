@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/static/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <title>Как добраться</title>
+    <style>
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 8px 16px;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: #007BFF;
+      }
+  
+      .sidebar {
+        width: 200px;
+        background-color: #eee;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+      .sidebar a {
+        display: block;
+      }
+      .content-margin {
+        margin-left: 220px;
+        padding: 15px;
+      }
+  
+      .topnav {
+        display: none;
+        background-color: #eee;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 28px;
+        padding: 10px 16px;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .content-margin {
+          margin-left: 0;
+          padding: 10px;
+        }
+        .topnav {
+          display: block;
+          position: relative;
+        }
+        .topnav a {
+          display: none;
+          border-top: 1px solid #ccc;
+        }
+        .topnav a.show {
+          display: block;
+        }
+        .menu-icon {
+          display: block;
+          background-color: #eee;
+          color: #333;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="sidebar">
+        <a href="/">Главная</a>
+        <a href="/where-when">Где и когда?</a>
+        <a href="/our-story">Наша история</a>
+        <a href="/invitation">Приглашение</a>
+        <a href="/dress-code">Дресс-код</a>
+        <a href="/our-gallery">Наши фото</a>
+        <a href="/anketa-link">Анкета гостя</a>
+        <a href="/get-to-the-event">Как добраться</a>
+    </nav>
+  
+    <div class="topnav">
+        <div class="menu-icon" onclick="toggleMenu()">☰ Меню</div>
+        <a href="/" aria-label="Главная">
+          <span class="icon">🏠</span><span class="text">Главная</span>
+        </a>
+        <a href="/where-when" aria-label="Где и когда?">
+          <span class="icon">📍</span><span class="text">Где и когда?</span>
+        </a>
+        <a href="/our-story" aria-label="Наша история">
+          <span class="icon">📖</span><span class="text">Наша история</span>
+        </a>
+        <a href="/invitation" aria-label="Приглашение">
+          <span class="icon">✉️</span><span class="text">Приглашение</span>
+        </a>
+        <a href="/dress-code" aria-label="Дресс-код">
+          <span class="icon">👗</span><span class="text">Дресс-код</span>
+        </a>
+        <a href="/our-gallery" aria-label="Наши фото">
+          <span class="icon">📸</span><span class="text">Наши фото</span>
+        </a>
+        <a href="/anketa-link" aria-label="Анкета гостя">
+          <span class="icon">📱</span><span class="text">Анкета гостя</span>
+        </a>
+        <a href="/get-to-the-event" aria-label="Как добраться">
+          <span class="icon">🗺️</span><span class="text">Как добраться</span>
+        </a>
+      </div>      
+      
+  
+    <div class="content content-margin">
+      
+    </div>
+  
+    <script>
+        function toggleMenu() {
+            const links = document.querySelectorAll('.topnav a');
+            links.forEach(link => {
+            link.classList.toggle('show');
+            });
+        }
+    </script>
+  </body>
+  
+    <div class="content content-margin">
+      
+<h1>Как добраться</h1>
+<p>Информация о маршрутах и транспортных вариантах до мест проведения мероприятия.</p>
+
+<section>
+  <h2>Главный ЗАГС Твери</h2>
+  <address>
+    ЗАГС на площади Анны Кашинской (Главное управление записи актов гражданского состояния)<br>
+    Свободный переулок, 5, Тверь<br>
+    Координаты: 56.857054, 35.904027<br>
+    <a href="https://yandex.ru/maps/-/CLeXYI8c" target="_blank">Открыть на Яндекс.Картах</a>
+  </address>
+  <h3>Общественным транспортом</h3>
+  <ul>
+    <li>Автобусы: маршруты № 5, 12, 17 (остановка «Площадь Анны Кашинской»)</li>
+    <li>Троллейбусы: маршруты № 1, 3, 4</li>
+    <li>Маршрутные такси: часто ходят по центральным улицам в сторону ЗАГСа</li>
+  </ul>
+  <h3>На автомобиле</h3>
+  <p>
+    От центра города примерно 5 минут. Парковка возле здания ограничена, рекомендуется использовать общественный транспорт или оставлять машину на парковках ближе к центру и пройтись пешком.
+  </p>
+</section>
+
+<section style="margin-top: 40px;">
+  <h2>Красный Лофт, Loft 1870</h2>
+  <address>
+    ул. Двор Пролетарки, 16, Тверь<br>
+    Координаты: 56.850793, 35.865027<br>
+    <a href="https://yandex.ru/maps/-/CLeXiZPm" target="_blank">Открыть на Яндекс.Картах</a>
+  </address>
+  <h3>Общественным транспортом</h3>
+  <ul>
+    <li>Автобусы: маршруты № 8, 11, 15 (остановка «Двор Пролетарки»)</li>
+    <li>Маршрутные такси: несколько маршрутов проходят по улице Пролетарки</li>
+  </ul>
+  <h3>На автомобиле</h3>
+  <p>
+    Есть парковка на территории Красного Лофта — рекомендуем уточняйте наличие мест у организаторов мероприятия.
+  </p>
+  <h3>Трансфер</h3>
+  <p>
+    Для удобства организован трансфер от ЗАГСа до Красного Лофта. Время и место посадки уточняйте у организаторов.
+  </p>
+</section>
+
+    </div>
+  </body>
+</html>

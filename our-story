@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/static/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <title>Наша история</title>
+    <style>
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 8px 16px;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: #007BFF;
+      }
+  
+      .sidebar {
+        width: 200px;
+        background-color: #eee;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+      .sidebar a {
+        display: block;
+      }
+      .content-margin {
+        margin-left: 220px;
+        padding: 15px;
+      }
+  
+      .topnav {
+        display: none;
+        background-color: #eee;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+      }
+      .menu-icon {
+        display: none;
+        font-size: 28px;
+        padding: 10px 16px;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        .content-margin {
+          margin-left: 0;
+          padding: 10px;
+        }
+        .topnav {
+          display: block;
+          position: relative;
+        }
+        .topnav a {
+          display: none;
+          border-top: 1px solid #ccc;
+        }
+        .topnav a.show {
+          display: block;
+        }
+        .menu-icon {
+          display: block;
+          background-color: #eee;
+          color: #333;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="sidebar">
+        <a href="/">Главная</a>
+        <a href="/where-when">Где и когда?</a>
+        <a href="/our-story">Наша история</a>
+        <a href="/invitation">Приглашение</a>
+        <a href="/dress-code">Дресс-код</a>
+        <a href="/our-gallery">Наши фото</a>
+        <a href="/anketa-link">Анкета гостя</a>
+        <a href="/get-to-the-event">Как добраться</a>
+    </nav>
+  
+    <div class="topnav">
+        <div class="menu-icon" onclick="toggleMenu()">☰ Меню</div>
+        <a href="/" aria-label="Главная">
+          <span class="icon">🏠</span><span class="text">Главная</span>
+        </a>
+        <a href="/where-when" aria-label="Где и когда?">
+          <span class="icon">📍</span><span class="text">Где и когда?</span>
+        </a>
+        <a href="/our-story" aria-label="Наша история">
+          <span class="icon">📖</span><span class="text">Наша история</span>
+        </a>
+        <a href="/invitation" aria-label="Приглашение">
+          <span class="icon">✉️</span><span class="text">Приглашение</span>
+        </a>
+        <a href="/dress-code" aria-label="Дресс-код">
+          <span class="icon">👗</span><span class="text">Дресс-код</span>
+        </a>
+        <a href="/our-gallery" aria-label="Наши фото">
+          <span class="icon">📸</span><span class="text">Наши фото</span>
+        </a>
+        <a href="/anketa-link" aria-label="Анкета гостя">
+          <span class="icon">📱</span><span class="text">Анкета гостя</span>
+        </a>
+        <a href="/get-to-the-event" aria-label="Как добраться">
+          <span class="icon">🗺️</span><span class="text">Как добраться</span>
+        </a>
+      </div>      
+      
+  
+    <div class="content content-margin">
+      
+    </div>
+  
+    <script>
+        function toggleMenu() {
+            const links = document.querySelectorAll('.topnav a');
+            links.forEach(link => {
+            link.classList.toggle('show');
+            });
+        }
+    </script>
+  </body>
+  
+    <div class="content content-margin">
+      
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arctica+Script&display=swap');
+
+  .history-container {
+    font-family: 'Arctica Script', cursive;
+    max-width: 700px;
+    margin: 40px auto;
+    color: #5B3A29;
+    line-height: 1.6;
+  }
+  .history-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #A0522D;
+  }
+  .event {
+    margin-bottom: 36px;
+  }
+  .event-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #8B4513;
+    margin-bottom: 8px;
+  }
+  .event-date {
+    font-size: 18px;
+    font-style: italic;
+    color: #A0522D;
+    margin-bottom: 10px;
+  }
+  .event-desc {
+    font-size: 18px;
+    color: #4E342E;
+  }
+</style>
+
+<div class="history-container">
+  <h1 class="history-title">Наша история</h1>
+
+  <div class="event">
+    <div class="event-title">Знакомство</div>
+    <div class="event-date">2016 год</div>
+    <div class="event-desc">
+      Наши пути впервые пересеклись в университете, где мы случайно оказались на одном и том же мероприятии. 
+      С первого взгляда почувствовали необычную связь, которая с каждым разговором становилась только крепче.
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">Начало отношений</div>
+    <div class="event-date">16/17 июля 2023 года</div>
+    <div class="event-desc">
+      После этого дня мы стали проводить много времени вместе — гулять по городу, ходить в кино и наслаждаться общением за чашкой кофе. 
+      Вскоре поняли, что не представляем жизнь друг без друга, и начали встречаться, открывая новое счастье.
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">Первое путешествие</div>
+    <div class="event-date">Торжок и Василево</div>
+    <div class="event-desc">
+      Мы долго обсуждали, куда отправиться вместе, и наконец решили провести время в живописных местах Торжка и Василева. 
+      Это путешествие стало настоящим испытанием для наших чувств и укрепило нашу связь.
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">Первое путешествие на все выходные</div>
+    <div class="event-date">Казань</div>
+    <div class="event-desc">
+      Следующим значимым событием стало совместное путешествие на все выходные в Казань. 
+      Мы наслаждались историей города, вкусами местной кухни и каждым моментом, проведённым вдвоём.
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">Два года вместе</div>
+    <div class="event-date">Июль 2025</div>
+    <div class="event-desc">
+      За эти два года мы научились поддерживать друг друга в любых ситуациях, расти как личности и вместе строить планы на будущее. 
+      Каждый день наполнялся смыслом благодаря нашей любви и взаимопониманию.
+    </div>
+  </div>
+
+  <div class="event">
+    <div class="event-title">Предложение</div>
+    <div class="event-date">27 июля 2025</div>
+    <div class="event-desc">
+      Этот особенный день навсегда останется в нашей памяти — Андрей сделал предложение Елене, и её счастливое «да» стало началом новой главы в нашей истории. 
+      Мы с нетерпением ждём момента, когда сможем отпраздновать наше единение с самыми близкими и дорогими людьми!
+    </div>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
