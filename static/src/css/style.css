@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Arctika Script';
+    src: url('/static/fonts/arctika-script.otf') format('opentype'),
+        url('/static/fonts/arctika-script.woff') format('woff'),
+        url('/static/fonts/arctika-script.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Arctika Script', cursive, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #007BFF;
+}
+  
+
+.topnav a.active {
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+}
+.topnav a.active::before {
+    content: "\25BA"; /* стрелка-указатель */
+    color: #007BFF;
+    position: absolute;
+    left: 10px;
+}
+
+.topnav a.home-link {
+    display: inline-block !important;
+    float: left;
+    padding: 10px 16px;
+    font-size: 20px;
+    user-select: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+
+  .topnav a {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Отображаем только иконку */
+  .topnav a .text {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  
+  /* Иконка с отступом */
+  .topnav a .icon {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  
+  /* Активная ссылка, можно добавить визуальный стиль */
+  .topnav a.active .icon {
+    color: #007BFF;
+  }
+  
