@@ -271,6 +271,34 @@ nav ul li a:hover {
     line-height: 1.4;
 }
 
+@media (max-width: 480px) {
+    .countdown {
+      margin-top: 30px;
+      padding: 0 15px;
+    }
+  
+    .countdown h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    #timer {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    #timer div {
+      min-width: 80px;
+      padding: 15px;
+    }
+  
+    #timer span {
+      font-size: 2rem;
+    }
+  }
+  
+
 /* Invitation section */
 .invitation-card img {
     width: 100%;
@@ -762,6 +790,42 @@ footer {
     #location dl dd {
         font-size: 16px;
     }
+}
+
+@media (max-width: 480px) {
+  #location .ceremony-section,
+  #location .banquet-section {
+    padding: 30px 15px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  #location .section-heading {
+    font-size: 24px;
+    margin: 25px 0 10px;
+  }
+
+  #location dl.details-list {
+    display: block;
+  }
+
+  #location dl dt {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c7bc72ff;
+    margin-bottom: 6px;
+  }
+
+  #location dl dd {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+  }
+
+  #location a {
+    font-size: 16px;
+  }
 }
 
   
