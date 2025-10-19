@@ -65,7 +65,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -79,9 +79,77 @@ nav ul li a:hover {
     color: #a1887f;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3d3d3bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a1887f;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 20px; /* или другое значение */
+    right: 20px; /* или другое значение */
+    z-index: 1000;
+    /* предотвращает тряску во время прокрутки */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3d3d3bff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;        
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        background: #f9f9f9;
+    }
+
+    .nav-links.active {
+        padding-top: 100px; /* Adjust based on your header height */
+        max-height: 700px; /* Adjust as needed */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+}
+
 /* Sections */
 .section {
-    padding: 40px 0;
+    padding: 70px 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -545,7 +613,7 @@ footer {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .timeline::before {

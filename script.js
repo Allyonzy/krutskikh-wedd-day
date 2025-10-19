@@ -39,3 +39,20 @@ document.querySelectorAll('nav a').forEach(link => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navUl = document.querySelector('nav ul');
+    const menuItems = document.querySelectorAll('nav ul li a'); // выбираем все пункты меню
+    
+    hamburger.addEventListener('click', function() {
+        navUl.classList.toggle('active');
+    });
+    
+    // Добавляем обработчик для каждого пункта меню
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            navUl.classList.remove('active'); // закрываем меню при клике
+        });
+    });
+});
