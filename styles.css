@@ -1,6 +1,15 @@
 /* Импорт шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Arctica+Script&display=swap');
 
+@font-face {
+    font-family: 'Arctica Script';
+    src: url('fonts/ArcticaScript.woff2') format('woff2'),
+         url('fonts/ArcticaScript.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+
 /* Base styles */
 * {
     margin: 0;
