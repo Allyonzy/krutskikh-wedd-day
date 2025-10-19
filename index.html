@@ -1,417 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="krutskikh-wedd-day/static/icons/favicon.ico" type="image/x-icon" />
-    <title>Главная</title>
-    <style>
-        nav {
-            background-color: #eee;
-            padding: 10px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #007BFF;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-      nav {
-        background-color: #eee;
-        padding: 10px;
-      }
-      nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        display: block;
-        padding: 8px 16px;
-      }
-      nav a:hover {
-        background-color: #ddd;
-        color: #007BFF;
-      }
-  
-      .sidebar {
-        width: 200px;
-        background-color: #eee;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding-top: 20px;
-        box-sizing: border-box;
-        overflow-y: auto;
-      }
-      .sidebar a {
-        display: block;
-      }
-      .content-margin {
-        margin-left: 220px;
-        padding: 15px;
-      }
-  
-      .topnav {
-        display: none;
-        background-color: #eee;
-        overflow: hidden;
-      }
-      .topnav a {
-        float: none;
-        display: block;
-      }
-      .menu-icon {
-        display: none;
-        font-size: 28px;
-        padding: 10px 16px;
-        cursor: pointer;
-        user-select: none;
-      }
-  
-      @media (max-width: 768px) {
-        .sidebar {
-          display: none;
-        }
-        .content-margin {
-          margin-left: 0;
-          padding: 10px;
-        }
-        .topnav {
-          display: block;
-          position: relative;
-        }
-        .topnav a {
-          display: none;
-          border-top: 1px solid #ccc;
-        }
-        .topnav a.show {
-          display: block;
-        }
-        .menu-icon {
-          display: block;
-          background-color: #eee;
-          color: #333;
-        }
-      }
-    </style>
-  </head>
-  
-  <body>
-    <nav class="sidebar">
-        <a href="krutskikh-wedd-day/index.html?forced_extension=.html">Главная</a>
-        <a href="krutskikh-wedd-day/where-when?forced_extension=.html">Где и когда?</a>
-        <a href="krutskikh-wedd-day/our-story?forced_extension=.html">Наша история</a>
-        <a href="krutskikh-wedd-day/invitation?forced_extension=.html">Приглашение</a>
-        <a href="krutskikh-wedd-day/dress-code?forced_extension=.html">Дресс-код</a>
-        <a href="krutskikh-wedd-day/our-gallery?forced_extension=.html">Наши фото</a>
-        <a href="krutskikh-wedd-day/anketa-link?forced_extension=.html">Анкета гостя</a>
-        <a href="krutskikh-wedd-day/get-to-the-event?forced_extension=.html">Как добраться</a>
-    </nav>
-  
-    <div class="topnav">
-        <div class="menu-icon" onclick="toggleMenu()">☰ Меню</div>
-        <a href="krutskikh-wedd-day/index.html?forced_extension=.html" aria-label="Главная">
-          <span class="icon">🏠</span><span class="text">Главная</span>
-        </a>
-        <a href="krutskikh-wedd-day/where-when?forced_extension=.html" aria-label="Где и когда?">
-          <span class="icon">📍</span><span class="text">Где и когда?</span>
-        </a>
-        <a href="krutskikh-wedd-day/our-story?forced_extension=.html" aria-label="Наша история">
-          <span class="icon">📖</span><span class="text">Наша история</span>
-        </a>
-        <a href="krutskikh-wedd-day/invitation?forced_extension=.html" aria-label="Приглашение">
-          <span class="icon">✉️</span><span class="text">Приглашение</span>
-        </a>
-        <a href="krutskikh-wedd-day/dress-code?forced_extension=.html" aria-label="Дресс-код">
-          <span class="icon">👗</span><span class="text">Дресс-код</span>
-        </a>
-        <a href="krutskikh-wedd-day/our-gallery?forced_extension=.html" aria-label="Наши фото">
-          <span class="icon">📸</span><span class="text">Наши фото</span>
-        </a>
-        <a href="krutskikh-wedd-day/anketa-link?forced_extension=.html" aria-label="Анкета гостя">
-          <span class="icon">📱</span><span class="text">Анкета гостя</span>
-        </a>
-        <a href="krutskikh-wedd-day/get-to-the-event?forced_extension=.html" aria-label="Как добраться">
-          <span class="icon">🗺️</span><span class="text">Как добраться</span>
-        </a>
-      </div>      
-      
-  
-    <div class="content content-margin">
-      
-    </div>
-  
-    <script>
-        function toggleMenu() {
-            const links = document.querySelectorAll('.topnav a');
-            links.forEach(link => {
-            link.classList.toggle('show');
-            });
-        }
-    </script>
-  </body>
-  
-    <div class="content content-margin">
-      
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Arctica+Script&display=swap');
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#invitation">Приглашение</a></li>
+                <li><a href="#location">Где и когда</a></li>
+                <li><a href="#form">Анкета гостя</a></li>
+                <li><a href="#dress-code">Дресс-код</a></li>
+                <li><a href="#other">Другое</a></li>
+                <li><a href="#story">Наша история</a></li>
+                <li><a href="#waiting">Ждём вас</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  .container-custom {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 50px 15px;
-    font-family: 'Arctica Script', cursive;
-    color: #3d3d3bff; /* серый текст */
-    text-align: center;
-  }
+    <main>
+        <section id="main" class="section">
+            <div class="container-custom">
+                <div class="welcome-text">
+                    Дорогие гости!<br>
+                    Вы очень важные для нас люди!<br>
+                    Приглашаем Вас разделить этот особенный день вместе с нами!
+                </div>
+        
+                <div class="names-extra names">
+                    Андрей и Елена
+                </div>
+                <div class="names">
+                    Крутских
+                </div>
+        
+                <div class="welcome-text">
+                    День создания нашей семьи: <span class="date-wedd">14 ноября 2025 года</span>
+                </div>
+        
+                <div class="countdown">
+                    <h2>До свадьбы осталось:</h2>
+                    <div id="timer">
+                        <div>
+                            <span id="days">00</span>
+                            <p>Дней</p>
+                        </div>
+                        <div>
+                            <span id="hours">00</span>
+                            <p>Часов</p>
+                        </div>
+                        <div>
+                            <span id="minutes">00</span>
+                            <p>Минут</p>
+                        </div>
+                        <div>
+                            <span id="seconds">00</span>
+                            <p>Секунд</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="photos-row">
+                    <div class="photo-container" data-alt="Андрей Викторович в детстве">
+                        <img src="https://i.pinimg.com/originals/dd/e0/a4/dde0a4e19e55050fa26e2b24619b542a.jpg" alt="Детское фото Андрея">
+                    </div>
+                    <div class="photo-container" data-alt="Елена Игоревна в детстве">
+                        <img src="https://masterpiecer-images.s3.yandex.net/e2caefb1719911eeb9b5429f31467427:upscaled" alt="Детское фото Елены">
+                    </div>
+                </div>
+                <div class="photos-row">
+                    <!-- «Прочный фундамент - залог долговечности любого сооружения»,  -->
+                    <div class="quote">«Инженерный расчет фундамента важнее любого архитектурного изыска. Без правильного расчета нагрузок самое красивое здание обречено на разрушение.» <br> Владимир Шухов, русский инженер</div>
+                    <div class="quote">«Science is what we understand well enough to explain to a computer. Art is everything else we do.» <br>  Donald Knuth, a famous computer scientist</div>
+                </div>
+            </div>
+        </section>
+        <section id="invitation" class="section">
+            <div class="container">
+                <h2>Приглашение</h2>
+                <div class="invitation-card">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="invitation_mobile_test.svg">
+                        <img src="invitation.svg" alt="Приглашение на свадьбу">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="location" class="section">
+            <div class="ceremony-section">
+                <div class="container">
+                    <h2 class="section-heading text-center">Церемония</h2>
+                    <hr class="divider">
+                    <dl class="details-list">
+                        <dt>Событие</dt>
+                        <dd>Торжественная церемония в ЗАГСе</dd>
+                        <dt>Сбор гостей</dt>
+                        <dd>14 ноября 2025 года (пятница) в 11:00</dd>
+                        <dt>Начало</dt>
+                        <dd>14 ноября 2025 года (пятница) в 11:20</dd>
+                        <dt>Где</dt>
+                        <dd>
+                            <address>
+                                ЗАГС на площади Анны Кашинской (Главное управление записи актов гражданского состояния)<br>
+                                <a href="https://yandex.ru/maps/-/CLeXYI8c" target="_blank">Свободный переулок, 5, Тверь</a><br>
+                                Координаты: 56.857054, 35.904027
+                            </address>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        
+            <div class="banquet-section">
+                <div class="container">
+                    <h2 class="section-heading text-center">Праздничный банкет</h2>
+                    <hr class="divider">
+                    <dl class="details-list">
+                        <dt>Событие</dt>
+                        <dd>Праздничный банкет в Красном Лофте</dd>
+                        <dt>Welcome</dt>
+                        <dd>14 ноября 2025 года (пятница) в 13:30</dd>
+                        <dt>Начало</dt>
+                        <dd>14 ноября 2025 года (пятница) в 14:30</dd>
+                        <dt>Где</dt>
+                        <dd>
+                            <address>
+                                Красный Лофт, Loft 1870<br>
+                                <a href="https://yandex.ru/maps/-/CLeXiZPm" target="_blank">ул. Двор Пролетарки, 16, Тверь</a><br>
+                                Координаты: 56.850793, 35.865027
+                            </address>
+                        </dd>
+                        <dt>Транспорт</dt>
+                        <dd>
+                            Трансфер от ЗАГСа или как добраться:
+                            <ul>
+                                <li><a href="https://goo.gl/maps/5gX1Hwb5syx" target="_blank">Место трансфера</a>: <strong>Время</strong></li>
+                                <li><a href="https://goo.gl/maps/5gX1Hwb5syx" target="_blank">Место трансфера</a>: <strong>Время</strong></li>
+                            </ul>
+                            Можно добраться на автомобиле.
+                        </dd>
+                        <dt>Парковка</dt>
+                        <dd>Есть парковка — уточняйте у организаторов.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="form" class="section">
+            <div class="container">
+                <h2>Анкета гостя</h2>
+                <p>Чтобы мы могли подготовиться к встрече с вами, пожалуйста, заполните небольшую анкету:</p>
+                
+                <div class="form-container">
+                    <script src="https://forms.yandex.ru/_static/embed.js"></script>
+                    <iframe src="https://forms.yandex.ru/u/68edc57949363999ba96e991?iframe=1" frameborder="0" name="ya-form-68edc57949363999ba96e991" width="650"></iframe>
+                </div>
+            </div>
+        </section>
 
-  .welcome-text {
-    font-size: 28px;
-    line-height: 1.5;
-    margin-bottom: 40px;
-    color: #3d3d3bff; /* серый */
-  }
+        <section id="dress-code" class="section">
+            <div class="container">
+                <h2>Дресс-код</h2>
+                <p class="dress-code-wish">Для нас главное — ваше присутствие! Но будем рады, если вы придержитесь цветовой гаммы мероприятия.</p>
+                
+                <div class="color-circles">
+                    <div class="circle" style="background-color: #dca98dff;" title="Бежево-розовый"></div>
+                    <div class="circle" style="background-color: #eec8b2ff;" title="Пастельный персиковый"></div>
+                    <div class="circle" style="background-color: #d3b8a5ff;" title="Пыльно-бежевый"></div>
+                    <div class="circle" style="background-color: #ffd700;" title="Золотой"></div>
+                    <div class="circle" style="background-color: #7a6442ff;" title="Тёплый коричневый"></div>
+                    <div class="circle" style="background-color: #a47d42ff;" title="Светло-коричневый"></div>
+                    <div class="circle" style="background-color: #993e1eff;" title="Терракотовый"></div>
+                    <div class="circle" style="background-color: #463824ff;" title="Тёмно-коричневый"></div>
+                    <div class="circle" style="background-color: #6c7822ff;" title="Оливковый"></div>
+                    <div class="circle" style="background-color: #697e75ff;" title="Серо-зелёный"></div>
+                </div>
+            </div>
+        </section>
 
-  .names {
-    font-size: 36px;
-    font-weight: 700;
-    color: #c7bc72ff; /* золотой */
-    margin-bottom: 50px;
-    font-family: 'Arctica Script', cursive;
-    font-style: normal !important;
-    letter-spacing: normal;
-  }
+        <section id="other" class="section">
+            <div class="container">
+                <h2>Другое</h2>
+                
+                <div class="other-info">
+                    
+                    <div class="info-card">
+                        <h3>Пожелания гостям</h3>
+                        <p>Просим вас не приносить на торжество живые цветы, так как мы хотим, чтобы ваши руки были свободны для аплодисментов и объятий.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Важное</h3>
+                        <p>Мы с нетерпением ждём встречи с вами и обещаем, что этот день будет незабываемым!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  .names-extra {
-    font-style: italic !important;
-  }
+        <section id="story" class="section">
+            <div class="container">
+                <h2>Наша история</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">Сентябрь 2016 год</div>
+                        <div class="event">Наше знакомство произошло во время учёбы в аспирантуре. 
+                            Мы видели друг друга на парах, но это случалось довольно редко — у нас были разные программы и расписания.
+                            Мы стали «друзьями» во ВКонтакте.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">16 июля 2023 года</div>
+                        <div class="event">После выпуска мы встретились летом. Андрей предложил провести время вместе и сходить на празднование Дня города Твери, но не вышло. Встретились в итоге уже после Дня города, но эта встреча стала началом нашего более близкого общения.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">30 июля 2023 года</div>
+                        <div class="event">Первое путешествие вместе. Василёво. </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">23 февраля 2024 года</div>
+                        <div class="event">Путешествие в Казань на Игры будущего.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">16 июля 2025 года</div>
+                        <div class="event">Два года вместе.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">27 июля 2025</div>
+                        <div class="event">Предложение на нашей любимой набережной — месте, где мы вместе пережили много важных моментов.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">14 ноября 2025</div>
+                        <div class="event">День нашей свадьбы. День расслабленности и беззаботности по календарю или Кузьминки.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">История начинается</div>
+                        <div class="event">Продолжение следует...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  .date-wedd {
-    font-size: 28px;
-    font-weight: 700;
-  }
+        <section id="waiting" class="section">
+            <div class="container">
+                <h2>Ждём вас</h2>
+                
+                <div class="waiting-content">
+                    <div class="couple-photo" data-alt="День Калининского округа">
+                        <img src="happy_us.jpg" alt="Фото пары">
+                    </div>
+                    
+                    <div class="waiting-message">
+                        <p>Дорогие друзья и родные!</p>
+                        <p>Ваше присутствие сделает нашу свадьбу еще более радостной и запоминающейся.</p>
+                        <p>С любовью, <br>Андрей и Елена 🧡🧡🧡</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  #countdown {
-    font-size: 24px;
-    font-weight: 600;
-    color: #3d3d3bff; /* серый */
-    line-height: 1.4;
-  }
+    <footer>
+        <p>&copy; 2025 Андрей & Елена. <br>Все права защищены.</p>
+    </footer>
 
-  .photos-row {
-    display: flex;
-    justify-content: center;
-    gap: 60px; /* Increased spacing */
-    margin-top: 80px; /* increased top margin */
-  }
-
-  .photo-container {
-    position: relative; !important/* Needed for overlay */
-    text-align: center;
-    max-width: 320px; /* Wider container */
-  }
-
-  .photo-container img {
-    width: 300px; /* Bigger image */
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(199, 188, 114, 0.5);
-    border: 3px solid #c7bc72ff;
-    transition: transform 0.3s ease;
-    display: block;
-  }
-  .photo-container::after {
-    content: attr(data-alt);
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    color: white;
-    background-color: rgba(0,0,0,0.6);
-    font-family: 'Arctica Script', cursive;
-    font-size: 18px;
-    font-weight: 600;
-    opacity: 0;
-    border-radius: 8px;
-    padding: 6px 10px;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    max-width: 280px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .photo-container:hover::after {
-    opacity: 1;
-  }
-
-  .photo-caption {
-    margin-top: 12px;
-    font-family: 'Arctica Script', cursive;
-    font-size: 20px;
-    color: #3d3d3bff; /* серый */
-    font-weight: 600;
-  }
-
-  .quote {
-    font-family: 'Arctica Script', cursive;
-    font-size: 16px;
-    font-style: italic;
-    color: #6d6d6cff;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 1.3;
-  }
-
-  /* Медиа-запрос для устройств с шириной экрана до 768px (планшеты, телефоны) */
-  @media (max-width: 900px) {
-    .container-custom {
-      max-width: 100%;
-      padding: 30px 10px;
-    }
-
-    .welcome-text {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .names-extra {
-      font-style: italic !important;
-    }
-
-    .names {
-      font-size: 28px;
-      margin-bottom: 40px;
-      font-family: 'Arctica Script', cursive;
-      font-style: normal !important;
-      letter-spacing: normal;
-    }
-
-    .date-wedd {
-      font-size: 22px;
-      white-space: normal; /* разрешает перенос */
-      word-break: break-word; /* переносит длинные слова */
-    }
-
-    #countdown {
-      font-size: 18px;
-    }
-
-    .photos-row {
-      flex-direction: column;
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .photo-container {
-      max-width: 90%;
-      margin: 0 auto;
-    }
-
-    .photo-container img {
-      width: 100%;
-      max-width: 320px;
-      height: auto;
-    }
-
-    .photo-container::after {
-      opacity: 1 !important;
-      position: static !important;
-      background-color: transparent !important;
-      color: #3d3d3bff !important; /* цвет текста в мобильной версии */
-      padding: 0 !important;
-      max-width: 100% !important;
-      box-shadow: none !important;
-      margin: 10px auto 0 auto !important;
-      display: block;
-    }
-  
-    .photo-container:hover::after {
-      opacity: 1 !important;
-    }
-
-    .quote {
-      font-size: 14px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
-</style>
-
-<div class="container-custom">
-  <div class="welcome-text">
-    Дорогие гости!<br>
-    Вы очень важные для нас люди!<br>
-    Приглашаем Вас разделить этот особенный день вместе с нами!
-  </div>
-
-  <div class=".names-extra names">
-    Андрей и Елена
-  </div>
-  <div class="names">
-    Крутских
-  </div>
-
-  <div class="welcome-text">
-    День создания нашей семьи: <span class="date-wedd">14 ноября 2025 года</span>
-  </div>
-
-  <div id="countdown"></div>
-
-  <div class="photos-row">
-    <div class="photo-container" data-alt="Андрей Викторович в детстве">
-      <img src="https://i.pinimg.com/originals/dd/e0/a4/dde0a4e19e55050fa26e2b24619b542a.jpg" alt="Детское фото Андрея">
-    </div>
-    <div class="photo-container" data-alt="Елена Игоревна в детстве">
-      <img src="https://masterpiecer-images.s3.yandex.net/e2caefb1719911eeb9b5429f31467427:upscaled" alt="Детское фото Елены">
-    </div>
-  </div>
-  <div class="photos-row">
-    <div class="quote">«Строительство — это искусство создания прочности на долгие годы»</div>
-    <div class="quote">«Код — это поэзия для тех, кто говорит на языке компьютеров»</div>
-  </div>
-</div>
-
-<script>
-  function updateCountdown() {
-    const targetDate = new Date('November 14, 2025 00:00:00').getTime();
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance < 0) {
-      document.getElementById('countdown').innerHTML = 'Свадьба уже состоялась!';
-      clearInterval(timer);
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById('countdown').innerHTML =
-      `До свадьбы осталось: <br><strong>${days} дн ${hours} час ${minutes} мин ${seconds} сек</strong>`;
-  }
-
-  updateCountdown(); // initial call
-  const timer = setInterval(updateCountdown, 1000);
-</script>
-
-    </div>
-    <script src="http://allyonzy.github.io/krutskikh-wedd-day/static/validator.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
