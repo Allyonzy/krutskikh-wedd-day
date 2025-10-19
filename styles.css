@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
     color: #3d3d3bff; /* обновлено на серый цвет */
     background-color: #f9f9f9;
+    display: inherit;
 }
 
 .container {
@@ -98,9 +99,9 @@ nav ul li a:hover {
 }
 
 .hamburger-menu {
-    position: fixed;
-    top: 20px; /* или другое значение */
-    right: 20px; /* или другое значение */
+    position: absolute;
+    top: 20px;
+    right: 10px;
     z-index: 1000;
     /* предотвращает тряску во время прокрутки */
     backface-visibility: hidden;
@@ -261,6 +262,25 @@ nav ul li a:hover {
     font-weight: 600;
     color: #3d3d3bff; /* серый */
     line-height: 1.4;
+}
+
+/* Медиа-запрос для мобильных устройств (ширина экрана до 767px) */
+@media (max-width: 767px) {
+    #timer {
+        flex-direction: column; /* вертикальное расположение */
+        gap: 10px;
+        align-items: center;
+    }
+
+    #timer div {
+        min-width: auto; /* адаптация ширины */
+        width: 80%; /* ширина блока по ширине экрана */
+        padding: 15px;
+    }
+    
+    #timer span {
+        font-size: 2rem; /* чуть меньше размер шрифта для удобства чтения */
+    }
 }
 
 /* Invitation section */
