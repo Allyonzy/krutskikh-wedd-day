@@ -101,7 +101,7 @@ nav ul li a:hover {
 .hamburger-menu {
     position: fixed;
     top: 10px; /* или другое значение */
-    left: 170px; /* или другое значение */
+    left: 20px; /* или другое значение */
     z-index: 1000;
     /* предотвращает тряску во время прокрутки */
     backface-visibility: hidden;
