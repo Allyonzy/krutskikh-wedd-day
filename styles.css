@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'Arctica Script';
-    src: url('fonts/ArcticaScript.woff2') format('woff2'),
-         url('fonts/ArcticaScript.woff') format('woff');
+    src: url('../fonts/ArcticaScript.woff2') format('woff2'),
+         url('../fonts/ArcticaScript.woff') format('woff');
     font-style: normal;
     font-weight: normal;
   }
