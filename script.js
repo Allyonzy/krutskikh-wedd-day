@@ -86,10 +86,10 @@ function updateTextCountdown() {
     const distance = targetDate - now;
 
     const endings = {
-        days: ['день', 'дня', 'дней'],
-        hours: ['час', 'часа', 'часов'],
-        minutes: ['минута', 'минуты', 'минут'],
-        seconds: ['секунда', 'секунды', 'секунд']
+        days: ['День', 'Дня', 'Дней'],
+        hours: ['Час', 'Часа', 'Часов'],
+        minutes: ['Минута', 'Минуты', 'Минут'],
+        seconds: ['Секунда', 'Секунды', 'Секунд']
     };
 
     function getEnding(number, endingsArray) {
@@ -122,7 +122,7 @@ function updateTextCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
-setInterval(updateTextCountdown, 3600);
+setInterval(updateTextCountdown, 1000);
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
