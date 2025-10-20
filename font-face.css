@@ -1,0 +1,12 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Arctica+Script&display=swap');
+
+@font-face {
+    font-family: 'Arctica Script';
+    src: url('https://allyonzy.github.io/krutskikh-wedd-day/fonts/ArcticaScript.woff2') format('woff2'),
+         url('https://allyonzy.github.io/krutskikh-wedd-day/fonts/ArcticaScript.woff') format('woff'),
+         url('https://allyonzy.github.io/krutskikh-wedd-day/fonts/ArcticaScript.otf') format('otf');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
