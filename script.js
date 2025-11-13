@@ -1,8 +1,8 @@
 // Countdown Timer
-const weddingDate = new Date("November 14, 2023 15:00:00").getTime();
+const weddingDate = new Date("November 14, 2025 11:20:00").getTime();
 
 function updateCountdown() {
-    const targetDate = new Date('November 14, 2025 00:00:00').getTime();
+    const targetDate = new Date('November 14, 2025 11:20:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
@@ -60,12 +60,12 @@ return getEnding(number, endings.seconds);
 }
 
 function updateCountdown() {
-    const targetDate = new Date('November 14, 2025 00:00:00').getTime();
+    const targetDate = new Date('November 14, 2025 11:20:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
     if (distance < 0) {
-    document.getElementById('timer').innerHTML = 'Свадьба уже состоялась!';
+    document.getElementById('timer').innerHTML = 'Регистрация завершена! Впереди банкет!';
     return;
     }
 
@@ -81,7 +81,7 @@ function updateCountdown() {
 }
 
 function updateTextCountdown() {
-    const targetDate = new Date('November 14, 2025 00:00:00').getTime();
+    const targetDate = new Date('November 14, 2025 11:20:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
