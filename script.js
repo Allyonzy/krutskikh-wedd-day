@@ -7,7 +7,7 @@ function updateCountdown() {
     const distance = targetDate - now;
 
     if (distance < 0) {
-        document.getElementById('timer').innerHTML = 'Свадьба уже состоялась!';
+        document.getElementById('timer').innerHTML = 'Вечеринка прошла, но всё только начинается. Ожидайте официальные фотографии и видео. Спасибо всем близким и друзьям за поддержку и поздравления!';
         return;
     }
 
@@ -65,7 +65,7 @@ function updateCountdown() {
     const distance = targetDate - now;
 
     if (distance < 0) {
-    document.getElementById('timer').innerHTML = 'Регистрация завершена! Впереди банкет!';
+    document.getElementById('timer').innerHTML = 'Вечеринка прошла, но всё только начинается. Ожидайте официальные фотографии и видео. Спасибо всем близким и друзьям за поддержку и поздравления!';
     return;
     }
 
